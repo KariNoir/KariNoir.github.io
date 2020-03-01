@@ -4,7 +4,7 @@ body {
     line-height: 1.7em;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 12px;
-    background: #F2F2F2;
+    background: rgb(248, 151, 6);
 }
 
 a:link {
