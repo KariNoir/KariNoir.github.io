@@ -120,7 +120,7 @@ em {
     width: 100%;
 	max-width: 1240px;
     margin: 0 auto;
-    background: #FFFFFF;
+    background: rgb(245, 3, 3);
 }
 
 #templatemo-menu {
