@@ -4,8 +4,55 @@ body {
     line-height: 1.7em;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 12px;
-    background: rgb(248, 151, 6);
+    background: url(images/clevelandriver.jpg) no-repeat center center fixed !important; 
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-blend-mode: lighten !important;
+
+  }
+
+.image {
+    background-image: url('clevelandriver.jpg') !important;
+    background: rgba(30,50,80,.4) !important;
 }
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 a:link {
     color: #0066AA;
@@ -120,7 +167,7 @@ em {
     width: 100%;
 	max-width: 1240px;
     margin: 0 auto;
-    background: rgb(245, 3, 3);
+    background: #FFFFFF;
 }
 
 #templatemo-menu {
