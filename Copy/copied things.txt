@@ -1,0 +1,44 @@
+html { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+background-image: url("images/clevelandriver.jpg") !important;
+    background-repeat: no-repeat !important;
+
+  opacity: 0.6;
+
+
+
+
+
+The transparent box in the index.html:
+
+<style> 
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+</style>
+
+
+<header>Professional Portfolio</header>
+</head>
+<body data-spy="scroll" data-target="#rock-navigation">
+    
+    <div class="background">
+        <div class="transbox">
+            
+            <!-- START NAVIGATION -->
