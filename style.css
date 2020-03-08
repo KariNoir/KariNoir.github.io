@@ -4,15 +4,150 @@ body {
     line-height: 1.7em;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 12px;
+    /* How I added the backkground using (!important) will override other inteructions on*/
     background: url(images/downtown-cleveland-sunsets.jpg) no-repeat center center fixed !important;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
     background-size: cover !important;
-    background-blend-mode: lighten !important;
+    background-blend-mode: soft-light !important;
 
   }
+  /*Slideshow/Carousel*/
 
+  * {box-sizing:border-box !important}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px !important;
+  position: relative !important;
+  margin: auto !important;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none !important;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; 
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8) !important;
+}
+
+/* Caption text */
+.text  {
+  color: #f2f;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1-4) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer !important;
+  height: 15px !important;
+  width: 15px !important;
+  margin: 0 2px !important;
+  background-color: #bbb !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+  transition: background-color 0.6s ease !important;
+}
+
+.active, .dot:hover {
+  background-color: #717171 !important;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade !important;
+  -webkit-animation-duration: 1.5s !important;
+  animation-name: fade !important;
+  animation-duration: 1.5s !important;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4 !important}
+  to {opacity: 1 !important}
+}
+
+@keyframes fade {
+  from {opacity: .4 !important}
+  to {opacity: 1 !important}
+}
+
+/*End of Carousel*/
+
+  h1 {
+    height: inherit;
+    background: inherit;
+    color: black;
+    -webkit-background-clip: text;
+                    background-clip: text;
+    filter: invert(10) grayscale(11) contrast(19);
+}
+  h2 {
+    height: inherit;
+    background: inherit;
+    color: black;
+    -webkit-background-clip: text;
+                    background-clip: text;
+    filter: invert(10) grayscale(11) contrast(19);
+}
+
+h3 {
+    height: inherit;
+    background: inherit;
+    color: black;
+    -webkit-background-clip: text;
+                    background-clip: text;
+    filter: invert(1) grayscale(1) contrast(9);
+}
+h4 {
+    height: inherit;
+    background: inherit;
+    color: black;
+    -webkit-background-clip: text;
+                    background-clip: text;
+    filter: invert(10) grayscale(11) contrast(19);
+}
+
+
+/* Not Needed anylonger
 .image {
     background-image: url('images/downtown-cleveland-sunsets.jpg') !important;
     background: rgba(30,50,80,.4) !important;
@@ -30,7 +165,7 @@ body {
     background-size: 100%;
     opacity: 0.8;
     filter:alpha(opacity=3);
-}
+}*/
 
 .dropbtn {
     background-color: #4CAF50;
@@ -90,7 +225,15 @@ a:hover {
 
 p {
     font-size: 13px;
+    color: black !important;
+    filter: invert(1) grayscale(1) contrast(9);
+    
 }
+
+article {
+color: #000 !important;
+}
+
 
 b {
     font-size: 110%;
